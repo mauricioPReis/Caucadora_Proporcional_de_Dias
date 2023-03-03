@@ -22,13 +22,11 @@ function calcularFatura() {
  	let faturaPropDesc = valorPlano - valorProporcional
 	let faturaProp = parseFloat(valorPlano) + parseFloat(valorProporcional)
   
-  let proportionalValue = document.getElementById('resul').textContent = valorProporcional.toFixed(2);
+  let proportionalValue = document.getElementById('resul').textContent = valorProporcional.toFixed(2); 
+  let faturaUnificadaValue = document.getElementById('resul2').textContent = faturaProp.toFixed(2);
+  let dias = document.getElementById('resul3').textContent = diferencaEmDias;
   
-  let valueDesconto = document.getElementById('resul2').textContent = faturaPropDesc.toFixed(2);
-  
-  let faturaUnificadaValue = document.getElementById('resul3').textContent = faturaProp.toFixed(2);
-  
-  return proportionalValue, valueDesconto, faturaUnificadaValue
+  return proportionalValue, faturaUnificadaValue, dias
 }
 
 function clearInputs(){
@@ -38,5 +36,5 @@ function clearInputs(){
     
   document.getElementById('resul').innerHTML="0.00";
   document.getElementById('resul2').innerHTML="0.00";
-  document.getElementById('resul3').innerHTML="0.00";
+  document.getElementById('resul3').innerHTML="00";
 }
