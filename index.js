@@ -11,7 +11,7 @@ function calcularFatura() {
   const diferencaEmDias = Math.ceil(dataDifEmMilessegundos / (1000 * 60 * 60 * 24)); 
 
   // Verifica se os valores passados como argumento são números
-  if (isNaN(valorPlano) || isNaN(diasDeUso)) {
+  if (isNaN(valorPlano)) {
     return "Os valores inseridos não são válidos. Insira apenas números.";
   }
 
