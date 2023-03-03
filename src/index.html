@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Seu Proporcional</title>
+  
+  <link href="/dist/output.css" rel="stylesheet">
+  <script type="text/javascript" src="index.js"></script>
+  
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800">
+  <div 
+    class="border rounded-lg mx-32 my-36 bg-slate-400 text-center font-serif font-semibold"
+  >
+    <h1 class="mt-2">Calculadora de Proporcional de Dias</h1>
+
+    <div class="text-center text-black font-mono font-bold m-3">
+      <div class="mt-3">
+        <label>Valor da parcela</label>
+        <input id="valorPlano" class="border rounded-lg" type="number">
+      </div>
+      <div class="mt-3">
+        <label>Quantidade de dias</label>
+        <input id="diasDeUso" class="border rounded-lg" type="number">
+      </div>
+      
+      <div class="mt-3">
+        <label>Valor:</label>
+        <span id="resul">0.00</span>
+      </div>
+
+      <div class="mt-2 gap-1">
+        <button 
+          class="p-1 border rounded-l-lg bg-slate-500" 
+          onclick="calcularFatura()" type="button"
+        >Calcular</button>
+        <button
+          class="p-1 border rounded-r-lg bg-slate-500"
+          onclick="clearInputs()"
+          type="button"
+        >Limpar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
