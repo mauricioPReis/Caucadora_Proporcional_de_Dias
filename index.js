@@ -16,7 +16,10 @@ function calcularFatura() {
   }
 
   //realizando os calculos de dias
-  let faturaPropDesc = valorPlano - valorProporcional
+  const valorDiario = valorPlano / 30;
+  const valorProporcional = valorDiario * diferencaEmDias;
+  
+ 	let faturaPropDesc = valorPlano - valorProporcional
 	let faturaProp = parseFloat(valorPlano) + parseFloat(valorProporcional)
   
   let proportionalValue = document.getElementById('resul').textContent = valorProporcional.toFixed(2);
