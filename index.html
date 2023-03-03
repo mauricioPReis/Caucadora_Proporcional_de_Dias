@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://icons8.com.br/icon/41LOFTWPsRas/calculator">
 
   <title>Seu Proporcional</title>
   
@@ -13,24 +14,37 @@
 </head>
 <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800">
   <div 
-    class="border rounded-lg mx-32 my-36 bg-slate-400 text-center font-serif font-semibold"
+    class="border rounded-lg mx-32 my-36 bg-slate-400 text-center font-mono font-semibold"
   >
-    <h1 class="mt-2">Calculadora de Proporcional de Dias</h1>
+    <h1 class="mt-2">Calculadora de Proporcional de Dias de Uso</h1>
 
     <div class="text-center text-black font-mono font-bold m-3">
       <div class="mt-3">
         <label>Valor da parcela</label>
         <input id="valorPlano" class="border rounded-lg" type="number">
       </div>
-      <div class="mt-3">
-        <label>Quantidade de dias</label>
-        <input id="diasDeUso" class="border rounded-lg" type="number">
-      </div>
+      <section class="mt-3">
+        <h3 class="m-1">Quantidade de dias<h3>
+        <label>De</label>
+        <input id="initialDate" class="border rounded-lg" type="date">
+        <label>Até</label>
+        <input id="finalDate" class="border rounded-lg" type="date">
+      </section>
       
-      <div class="mt-3">
-        <label>Valor:</label>
-        <span id="resul">0.00</span>
-      </div>
+      <section class="mt-3 flex flex-col">
+        <div>
+          <label>Valor proporcional:</label>
+          <span id="resul">0.00</span>
+        </div>
+        <div>
+        	<label>Valor do desconto:</label>
+        	<span id="resul2">0.00</span>
+        </div>        
+        <div>
+        	<label>Valor unificado:</label>
+        	<span id="resul3">0.00</span>
+        </div>        
+      </section>
 
       <div class="mt-2 gap-1">
         <button 
