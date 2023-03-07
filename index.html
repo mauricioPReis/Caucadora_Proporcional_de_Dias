@@ -10,54 +10,113 @@
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="text/javascript" src="index.js"></script>
+
+  <style>    
+    .container {       
+      background: linear-gradient(120deg, #a7f3d0 0%, #348f50 100%);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+      
+    input {
+      width: 35%;
+       height: 1.75rem;      
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+  
+    @media screen and (max-width: 600px) {
+      input {
+        width: 55%;
+        height: 1.75rem;
+        font-size: 16px;
+      }
+    }
+
+    /* tornar a calculadora responsiva */
+    @media only screen and (max-width: 600px) {
+      .container {
+        max-width: 100%;
+        margin: 0 16px;
+      }
+    }
+  </style>
   
 </head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-800">
-  <div 
-    class="border rounded-lg mx-32 my-36 bg-slate-400 text-center font-mono font-semibold"
-  >
-    <h1 class="mt-2">Calculadora de Proporcional de Dias de Uso</h1>
 
-    <div class="text-center text-black font-mono font-bold m-3">
-      <div class="mt-3">
+<!-- Ajustando a tela o body para ser flexivel, justificado ao centro e ocupar toda a tela -->
+<body class="flex justify-center h-screen m-0 p-4 items-center bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-800">
+  <div 
+    class="max-w-[31.25rem] w-[100%] p-1 container block text-gray-700 font-bold mb-2 col-span-2 border rounded-lg bg-slate-400 text-center font-mono font-semibold"
+  >
+    <h1 class="mt-2">Calculadora de Proporcional de Dias</h1>
+
+   <div class="text-center text-black font-mono font-bold m-3">
+      <div class="mt-2">
         <label>Valor da parcela</label>
-        <input id="valorPlano" class="border rounded-lg" type="number">
+        <input id="valorPlano" class="shadow appearance-none border rounded w-18 py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" placeholder="0.00">
       </div>
-      <section class="mt-3">
-        <h3 class="m-1">Informe o periodo<h3>
+     
+      <section class="mt-2">
+        <h3 class="m-0.5">Informe o periodo<h3>
         <label>De</label>
         <input id="initialDate" class="border rounded-lg" type="date">
         <label>Até</label>
         <input id="finalDate" class="border rounded-lg" type="date">
       </section>
       
-      <section class="mt-3 flex flex-col">
+      <section class="mt-2 flex flex-col">
         <div>
           <label>Valor proporcional:</label>
           <span id="resul">0.00</span>
         </div>
         <div>
-        	<label>Valor fatura + proporcional:</label>
+        	<label>Valor fatura + proporcional::</label>
         	<span id="resul2">0.00</span>
         </div>        
         <div>
         	<label>Quantidade de dias:</label>
         	<span id="resul3">00</span>
-        </div>        
+        </div>
+        
       </section>
 
       <div class="mt-2 gap-1">
         <button 
-          class="p-1 border rounded-l-lg bg-slate-500" 
+          class="p-1 border rounded-l-lg bg-slate-400 hover:bg-slate-500 hover:-translate-y-1 hover:scale-110 duration-300" 
           onclick="calcularFatura()" type="button"
         >Calcular</button>
         <button
-          class="p-1 border rounded-r-lg bg-slate-500"
+          class="p-1 border rounded-r-lg bg-slate-400 hover:bg-slate-500 hover:-translate-y-1 hover:scale-110 duration-300"
           onclick="clearInputs()"
           type="button"
         >Limpar</button>
       </div>
     </div>
-  </div>
+        
+    <div class="grid justify-items-start border rounded-lg ">
+      <details class="ml-2 mr-2">
+          <summary>Valor proporcional</summary>
+          <p class="text-justify">
+            Este campo de é responsável por esta exibindo o valor referente ao proporcional de dias que o cliente utilizou o serviço 
+          <p>
+      </details>
+
+      <details class="ml-2 mr-2">
+          <summary>Valor fatura + proporcional</summary>
+          <p class="text-justify">
+            Este campo vai lhe informar o valor da fatura do cliente somado ao valor proporcional da fatura do cliente isto de o cliente optar por realizar uma unificação de seu proporcional mais(+) sua fatura em aberto, se existir alguma é claro, do contrário, você pode esta ignorando este campo.
+          <p>
+      </details>
+
+      <details class="ml-2 mr-2">
+          <summary>Quantidade de dias</summary>
+          <p class="text-justify">
+            Este campo vai lhe informar a quantidade de dias que o cliente utilizou os serviços baseado nos valor inicial e final que você informou.
+          <p>
+      </details>
+      
+    </div>
+  </div>  
 </body>
 </html>
