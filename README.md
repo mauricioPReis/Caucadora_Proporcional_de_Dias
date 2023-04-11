@@ -7,7 +7,7 @@ Este é um projeto de uma calculadora proporcional de dias utilizados para servi
 
 Utilize a aplicação do site [aqui](https://mauriciopreis.github.io/Caucadora_Proporcional_de_Dias/index.html)
 #
-## As versões da aplixação
+## As versões da aplicação
 ### versão 1.0
 Na primeira versão tínhamos apenas que entrar com dois parâmetros: o valor da parcela e a quantidade de dias, e logo a abaixo nos era entregue o valor proporcional da fatura que o cliente em questão deveria pagar porém com apenas um botão de calcular não havia libar campos se não apagasse ou recarregue a página assim como mostra a imagaguem a baixo.
 
