@@ -16,15 +16,27 @@ Na primeira versão tínhamos apenas que entrar com dois parâmetros: o valor da
 ### Versão 2.0
 Na segunda versão do projeto foi feita a inclusão do botão Limpar que deixa os inputs(caixa de texto), e fois está a versão a ser implementada na empresa para ajudar os colaboradores assim sendo possível obter alguns feedbacks positivos dos colabores como mostrado abaixo, a versão e os feedback:
 
-![Verção 1.0](img/vercao_02.jpeg)
+![Verção 2.0](img/vercao_02.jpeg)
 
 <details>
   <summary>FeedBack</summary>
   
   FeedBack |
   :--------------- | 
-  ![Verção 1.0](img/FeedBack01.png) |
-  ![Verção 1.0](img/FeedBack2.png) |
-  ![Verção 1.0](img/FeedBack3.1.jpg) ![Verção 2.0](img/FeedBack3.2.jpg)|
+  ![FeedBack 1.0](img/FeedBack01.png) |
+  ![FeedBack 2.0](img/FeedBack2.png) |
+  ![FeedBack 3.0](img/FeedBack3.1.jpg) ![FeedBack 3.2](img/FeedBack3.2.jpg)|
   
 </details>
+
+### Versão 2.6
+Levando em consideração todos os feedbacks que foram reparados, foram feitas as modificações e incluídos uma explicação para os campos dos resultados com intuito de deixar a aplicação de melhor acessibilidade
+
+![Verção 2.6.0](img/versao-02_6.png)
+
+### Melhorias futuras
+- [ ] Inclusão de uma barra de navegação
+  - Home
+  - about
+- [ ] Inclusão de modo escoro
+- [ ] Melhoria na peleta de corres
